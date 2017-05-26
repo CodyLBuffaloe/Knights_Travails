@@ -7,10 +7,14 @@ end
 
 class Board
   def initialize
-    @board = Array.new(8){Array.new(8)}
+    @board = Array.new(8)
+    @board.map!{Array.new(8)}
     @board.each do |e|
       puts "#{e}"
     end
+    @board[0][0] = 0
+    puts "First: #{@board[0][0]}"
+    puts "Last: #{@board[7][5]}"
   end
 end
 
