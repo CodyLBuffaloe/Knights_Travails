@@ -58,24 +58,3 @@ end
 knight_moves([0,3],[3,3])
 
 knight_moves([0,0],[0,7])
-
-
-
-
-
-#Build a board and a knight
-#treat all possible Knight moves as children in a tree NO MOVES OFFBOARD!
-#Which search algorithm is best for this? What is good at going through a potentially infinite series quickly?
-
-=begin
-Conceptualize moving through arrays, instead of a board. You are traversing two arrays down and one subscript over in order to find
-ending_position. Then start thinking of it as a board, with vertical and lateral moves you'll need to get from place to place.
-=end
-
-=begin
-How to go about treating all indicies as nodes in a tree?
--@knight starts @ @board[0][1]
--Tree is instance level
--How should I traverse through arrays/ traverse subscripts?
-- Will need to somehow communicate can't move past [array][7], since out of bounds.
-=end
